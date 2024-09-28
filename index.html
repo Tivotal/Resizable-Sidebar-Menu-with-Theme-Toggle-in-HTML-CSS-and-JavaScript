@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resizable Sidebar Menu with Theme Toggle</title>
+
+    <!--font awesome(for icons)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="sidebar">
+        <div class="sidebar-header">
+          <i class="fab fa-slack"></i>
+          <p class="txt">Sidebar Menu</p>
+        </div>
+
+        <div class="menu">
+          <div class="search">
+            <input type="text" placeholder="search..." />
+            <i class="fas fa-search"></i>
+          </div>
+          <a href="#">
+            <i class="fas fa-inbox"></i>
+            <p class="txt">Inbox</p>
+          </a>
+          <a href="#">
+            <i class="fas fa-star"></i>
+            <p class="txt">Starred</p>
+          </a>
+          <a href="#">
+            <i class="fas fa-paper-plane"></i>
+            <p class="txt">Sent</p>
+          </a>
+          <a href="#">
+            <i class="fas fa-file"></i>
+            <p class="txt">Drafts</p>
+          </a>
+          <a href="#">
+            <i class="fas fa-exclamation-circle"></i>
+            <p class="txt">Spam</p>
+          </a>
+          <a href="#">
+            <i class="fas fa-trash-can"></i>
+            <p class="txt">Trash</p>
+          </a>
+        </div>
+        <div class="profile">
+          <img src="img.jpg" alt="" />
+          <div class="profile-txt">
+            <h2>Rossy Albert</h2>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="resizer"></div>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="main-header">
+        <i class="fas fa-moon theme-toggle"></i>
+      </div>
+      <div class="main-content">
+        <h1>Resizable Sidebar Menu</h1>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
